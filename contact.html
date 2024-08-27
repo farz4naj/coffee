@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('https://www.codingnepalweb.com/demos/create-responsive-coffee-website-html-css/hero-bg.jpg');
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navbar .logo {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+.navbar .logo span {
+  color: #C06B3E;
+}
+.navbar .menu-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+.navbar a:hover {
+  color: #C06B3E;
+}
+.contact {
+  width: 100%;
+  min-height: 105vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  color: aliceblue;
+}
+.contact .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact .map, .contact .form {
+  flex-basis: 50%;
+  width: 300%;
+  height: 100%;
+}
+.contact iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
+.contact .row form {
+  height: 100%;
+  padding: 10rem;
+  text-align: center;
+}
+
+.contact form h3 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.contact .inputBox {
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  background-color: gainsboro;
+  width: 500px;
+}
+
+</style>
+<body>
+<header>
+        <nav class="navbar">
+          <a class="logo" href="#">Coffee<span>.</span></a>
+          <ul class="menu-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./orders.html">orders</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+          </ul>
+        </nav>
+</header>
+<section class="contact" id="contact">
+    <div class="section-title">
+        <h1>Contact <span>Us</span></h1>
+    </div>
+    <div class="row">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429157.54675741366!2d-117.389166995983!3d32.824240427869604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%20CA!5e0!3m2!1sen!2sus!4v1629783957987!5m2!1sen!2sus" width="100%" height="500px" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="form">
+            <form action="">
+                <h3>Leave a message</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="name">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="number">
+                </div>
+                <div class="inputBox">
+                  <span class="fas fa-phone"></span>
+                  <input type="text" placeholder="text">
+                </div>
+                <br>
+                <a href="./submisiion.html" type="button" class="btn">Submit</a>
+            </form>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
